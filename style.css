@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: end;
+}
+.navbar-items {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 1.6rem;
+  margin: 2rem;
+}
+.navbar-items li {
+  margin: 0 0.6rem;
+}
+.navbar-items li a {
+  color: #000000c1;
+  text-decoration: none;
+}
+.navbar-items li a:hover {
+    text-decoration: underline;
+    color: #000000c1;
+}
+.menu {
+  margin: 0 0.4rem 0 1rem;
+  width: 2.5rem;
+}
+.profile {
+  height: 3rem;
+  border-radius: 50%;
+}
+.menu,
+.profile {
+  display: flex;
+  cursor: pointer;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  width: 28rem;
+  margin-bottom: 3rem;
+}
+.search {
+  border: 1px solid #d5d7dc;
+  display: flex;
+  height: 4.5rem;
+  width: 58rem;
+  border-radius: 2%;
+  overflow: hidden;
+  border-radius: 50px;
+}
+.search:hover {
+  box-shadow: 0 0 3px rgb(147, 147, 147);
+}
+.search input {
+  width: 80%;
+  border: none;
+}
+.search input:focus {
+  font-size: 1.6rem;
+  outline: none;
+}
+.search div {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  margin: 0 .8rem;
+}
+.search div img {
+  width: 100%;
+  height: 61%;
+}
+
+.buttons-container {
+  margin-top: 3rem;
+}
+.buttons-container button {
+  border: none;
+  background-color: #f8f9fa;
+  padding: 1rem 1.2rem;
+  border-radius: 5px;
+  margin: 0 0.5rem;
+  color: #202124;
+}
+
+.buttons-container button:hover {
+  border: 1px solid #c5c5c5;
+}
+.footer {
+  font-size: 1.6rem;
+  color: #70757a;
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.footer hr {
+  height: 1px;
+  background-color: #dadce0;
+  border: none;
+}
+.footer > div {
+  padding: 1.8rem 2rem;
+}
+.country,
+.info {
+  display: flex;
+  align-items: center;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.info-left li {
+  margin-right: 2rem;
+  text-align: center;
+}
+.info-right li {
+  margin-left: 2rem;
+}
+.info ul li:hover{
+    text-decoration: underline;
+    color: #70757a;
+}
+
+@media (max-width: 650px) {
+  .info {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .search {
+    width: 90vw;
+  }
+}
