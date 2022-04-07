@@ -1,2 +1,2 @@
-# google-clon 🚀
-Clon of Google.com
+# Google.com clon 🚀
+
